@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+    button {
+      background: steelblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>HTML5 Enhanced Page</h1>
+    <p>This page demonstrates <strong>lists, tables, media</strong>, and a complete <strong>HTML5 form</strong> with built-in validation.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Popular Web Technologies</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h3>Steps to Build a Web Page</h3>
+    <ol>
+      <li>Plan your structure</li>
+      <li>Write clean HTML code</li>
+      <li>Style with CSS</li>
+      <li>Add interactivity with JavaScript</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>HTML5 Input Types Overview</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Input Type</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>email</td>
+          <td>Captures valid email addresses</td>
+        </tr>
+        <tr>
+          <td>date</td>
+          <td>Allows picking a date from a calendar</td>
+        </tr>
+        <tr>
+          <td>number</td>
+          <td>Accepts only numeric input</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Showcase</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Sample Image" width="400">
+      <figcaption>A sample placeholder image.</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="400">
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>User Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      
+      <!-- Personal Info -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required minlength="3">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?[0-9]{10,15}$" required>
+      </fieldset>
+
+      <!-- Account Info -->
+      <fieldset>
+        <legend>Account Information</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select --</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="subscribe" checked>
+          Subscribe to newsletter
+        </label>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+      </fieldset>
+
+      <!-- Submit -->
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Elias Minani</p>
+  </footer>
+</body>
+</html>
